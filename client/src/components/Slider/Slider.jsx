@@ -17,7 +17,7 @@ const Slider = () => {
         setInterval(()=>{
             setSlideIdx(slideIdx => slideIdx > 0 ? slideIdx - 1 : 2);
             
-        }, 15000)
+        }, 10000)
     }, [])
 
     const handleClick = (direction) =>{
