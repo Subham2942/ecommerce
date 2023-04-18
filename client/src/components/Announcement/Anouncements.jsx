@@ -1,21 +1,12 @@
-import Styled from 'styled-components'
 
-const Container = Styled.div`
-    height: 30px;
-    background-color: teal;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 500;
-`
+import style from "./Anouncement.module.css"
+
 
 const Anouncements = () => {
   return (
-    <Container>
+    <div className = {style.container}>
         Get flat 30% OFF of your first purchase!!!
-    </Container>
+    </div>
   )
 }
 
