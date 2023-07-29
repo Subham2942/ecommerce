@@ -1,0 +1,43 @@
+.container{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 70px;
+    margin-bottom: 20px;   
+}
+
+.desc{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.inputContainer{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+}
+
+.input{
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    flex: 7;
+}
+
+.btn{
+    flex: 1;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,12 @@
+.container{
+    padding: 45px;
+    display: grid;
+    /* align-items: center; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem 1rem;
+
+}
+
+.product{
+
+}

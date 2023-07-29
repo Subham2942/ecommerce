@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    height: 40vh;
+}
+
+.left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.desc{
+    margin: 20px 0;
+
+}
+
+.socialContainer{
+    display: flex;
+}
+
+.socialIcon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
+.center{
+    flex: 1;
+    padding: 20px;
+}
+
+.center > .title{
+    margin-bottom: 30px;
+}
+
+.list{
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.list li{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+
+.right{
+    flex: 1;
+    padding: 20px;
+}
+
+.right > .title{
+    margin-bottom: 30px;
+}
+
+.contactItem{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.payment{
+    width: 50%;
+}
