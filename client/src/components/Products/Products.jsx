@@ -1,18 +1,30 @@
-import React from 'react'
-import styles from './Products.module.css'
-import {popularProducts} from '../../assets/data'
-import Product from './Product'
+import React from 'react';
+import styled from 'styled-components';
+import { popularProducts } from '../../assets/data';
+import Product from './Product';
+
+// Styled Components
+const Container = styled.div`
+  padding: 45px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem 1rem;
+`;
+
+const ProductDiv = styled.div`
+  /* If there are any specific styles for the product wrapper, add them here. */
+`;
 
 const Products = () => {
   return (
-    <div className={styles.container}>
-        {popularProducts.map(product=>(
-            <div className={styles.product} >
-                <Product item={product} key={product.id} />
-            </div>
-        ))}
-    </div>
-  )
-}
+    <Container>
+      {popularProducts.map((product) => (
+        <ProductDiv key={product.id}>
+          <Product item={product} />
+        </ProductDiv>
+      ))}
+    </Container>
+  );
+};
 
-export default Products
+export default Products;
