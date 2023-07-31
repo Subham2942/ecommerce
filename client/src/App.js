@@ -9,10 +9,10 @@ function App() {
   return (
     <div>
       <Home/>
-      <ProductList/>
+      {/* <ProductList/>
       <Product/>
       <Register/>
-      <Login/>
+      <Login/> */}
     </div>
   );
 }
