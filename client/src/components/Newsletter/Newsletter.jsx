@@ -2,6 +2,8 @@ import { MdSend } from "react-icons/md"
 
 import styled from "styled-components";
 
+import styled from "styled-components";
+
 
 
 const Container = styled.div`
