@@ -2,16 +2,17 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { MdOutlineArrowLeft, MdOutlineArrowRight } from 'react-icons/md';
 import { sliderItems } from '../../assets/data';
-
+import { mobile } from '../../responsive';
 // Styled Components
 const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   position: relative;
   overflow: hidden;
-  scrollbar-width: none;
+  ${mobile({ display: "none" })}
 `;
+
 
 const Arrows = styled.div`
   display: flex;
