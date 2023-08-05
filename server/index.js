@@ -5,10 +5,16 @@ const app = express();
 dotenv.config();
 
 const userRoute = require("./routes/user");
+const authRoute = require("./routes/auth");
 
 const url = process.env.MONGODB_URI;
 
-mongoose.connect(url)
+app.use(express.json());
+
+mongoose.connect(url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
     .then( ()=> {
         console.log("Database is connected!");
         app.listen(process.env.PORT || 4000, ()=>{
@@ -18,8 +24,11 @@ mongoose.connect(url)
     })
     .catch(err => {
          console.log(err);
+         console.log("Cannot connect to database");
     }
 );
 
-app.use("/api/user", userRoute);
 
+
+app.use("/api/user", userRoute);
+app.use("/api/auth", authRoute);
