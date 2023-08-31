@@ -119,7 +119,7 @@ const Button = styled.button`
   }
 `;
 
-const Product = () => {
+const Product = ({productID}) => {
   return (
     <Container>
         <Navbar/>
@@ -131,7 +131,7 @@ const Product = () => {
             </ImageContainer>
 
             <InfoContainer>
-                <Title>Denim Jumpsuit</Title>
+                <Title>Denim Jumpsuit {productID}</Title>
                 <Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Eum a tenetur nemo possimus adipisci. Aperiam magni tempora 
                     eos magnam veritatis voluptates deleniti molestiae similique 
